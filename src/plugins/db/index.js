@@ -22,19 +22,20 @@ export const posts = [
   {
     id: "d3d3d3d3-d3d3-d3d3-d3d3-d3d3d3d3d3d3",
     title: "How to travel to Asia",
-    content:
-      "Do research on which area in Asia you want to visit (ex - India, China, etc), and learn a bit of the local language, perhaps with Duolingo",
+    content: "Do research on which area in Asia you want to visit (ex - India, China, etc), and learn a bit of the local language, perhaps with Duolingo",
   },
   {
     id: "e4e4e4e4-e4e4-e4e4-e4e4-e4e4e4e4e4e4",
     title: "How to travel to Iceland",
-    content:
-      "Traveling to Iceland is really cool, be sure to bring a good jacket or rent one while visiting.",
+    content: "Traveling to Iceland is really cool, be sure to bring a good jacket or rent one while visiting.",
   },
 ];
 
+export const tags = [];
+
 const db = {
   posts,
+  tags,
 };
 const DbPlugin = fp(function DbPlugin(fastify, opts, next) {
   fastify.log.info("Database loading...");
